@@ -1,0 +1,97 @@
+.LContainer
+{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  width:100%;
+  color:white;
+  height:100%;
+  background: linear-gradient(#6200ee, #3F51Bc, #3F51BB)
+}
+
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.example-right-align {
+  text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}
+
+.login h1{
+  font-size:xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.formComtainer{
+  color:black;
+  background-color: white;
+  width:50%;
+  font-size: xx-large;
+  font-weight:900;
+  border:5px solid black;
+}
+.inpt-items{
+  color:black;
+  width:100%;
+}
+
+.sbtBtn{
+  font-size: xx-large;
+  margin-bottom:1rem;
+  border:2px solid black;
+  margin-top:0;
+  border-radius:4px;
+
+}
+.otherActions{
+  display: flex;
+  flex-direction: row;
+}
+.otherActions p{
+  margin:auto;
+  font-size: larger;
+}
+
+.otherActions:hover{
+  cursor: pointer;
+}
+.resetpss{
+  border-left: 5px solid rgb(230, 13, 13);
+}
+
+
+@media screen and (max-width: 600px) {
+  .formComtainer{
+    color:black;
+    background-color: white;
+    width:80%;
+    font-size:large;
+    font-weight:900;
+    border:5px solid black;
+  }
+  .otherActions{
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+  }
+
+  .otherActions p{
+    margin-top:0.5rem;
+    border-bottom:2px solid black;
+    font-size: larger;
+  }
+
+  .resetpss{
+    border-bottom:2px solid black;
+  }
+}

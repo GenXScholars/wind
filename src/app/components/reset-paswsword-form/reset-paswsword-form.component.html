@@ -1,0 +1,15 @@
+<div class="LContainer">
+  <div class="login">
+    <h1>RETRIEVE MY ACCOUNT</h1>
+  </div>
+  <mat-form-field class="formComtainer" appearance="fill">
+    <mat-label class="inpt-items" >Enter your Registered email</mat-label>
+    <input class="inpt-items"  matInput placeholder="me@gmail.com" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <button mat-button class="sbtBtn">SUBMIT</button>
+
+</div>
+
+
+

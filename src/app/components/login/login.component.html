@@ -1,0 +1,25 @@
+<div class="LContainer">
+  <div class="login">
+    <h1>LOGIN</h1>
+  </div>
+  <mat-form-field class="formComtainer" appearance="fill">
+    <mat-label class="inpt-items" >Enter your email</mat-label>
+    <input class="inpt-items"  matInput placeholder="me@gmail.com" formControlName="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <mat-form-field class="formComtainer" appearance="fill">
+    <mat-label class="inpt-items">Enter your password</mat-label>
+    <input class="inpt-items" matInput [type]="hide ? 'password' : 'text'">
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+  <button mat-button class="sbtBtn">SUBMIT</button>
+  <div class="otherActions">
+    <p class="resetpss forgotPassword" routerLink='/resetPassword'>I forgot My password</p>
+   <p routerLink='/register' class="register">Create New Account</p>
+  </div>
+
+</div>
+
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "large" color = "#1615c5" type = "square-loader" [fullScreen] = "false"><p style="color: white" > </p></ngx-spinner>
